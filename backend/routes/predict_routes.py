@@ -1,8 +1,8 @@
 from flask import Blueprint, request, jsonify
 import os
 from werkzeug.utils import secure_filename
-from config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
-from services.mobilenetv2_predict import predict_image
+from backend.config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
+from backend.services.mobilenetv2_predict import predict_image
 
 predict_bp = Blueprint('predict', __name__)
 

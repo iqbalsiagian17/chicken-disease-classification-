@@ -1,7 +1,7 @@
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-from config import MODEL_PATH
+from backend.config import MODEL_PATH
 
 # Load model sekali saja saat pertama
 model = load_model(MODEL_PATH)

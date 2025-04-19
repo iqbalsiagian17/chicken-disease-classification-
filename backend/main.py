@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_cors import CORS  # Tambah ini
-from routes.predict_routes import predict_bp
-from config import UPLOAD_FOLDER
+from backend.routes.predict_routes import predict_bp
+from backend.config import UPLOAD_FOLDER
 import os
 
 app = Flask(__name__)
