@@ -12,5 +12,10 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 app.register_blueprint(predict_bp)
 
+@app.route('/')
+def home():
+    return "Chicken Disease Classification API is running! 🚀"
+
+
 if __name__ == '__main__':
     app.run(debug=True)
