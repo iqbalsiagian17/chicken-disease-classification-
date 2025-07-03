@@ -14,7 +14,7 @@ app.register_blueprint(predict_bp)
 
 @app.route('/')
 def home():
-    return "Chicken Disease Classification API is running! 🚀"
+    return "Chicken Disease Classification API is running!"
 
 
 if __name__ == '__main__':

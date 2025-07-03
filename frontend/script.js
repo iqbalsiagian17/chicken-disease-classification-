@@ -22,7 +22,7 @@ function predictImage() {
     document.getElementById('loading').hidden = false;
     resultDiv.innerHTML = "🔄 Memprediksi...";
 
-    fetch('https://chicken-disease-classification-production.up.railway.app/predict', {
+    fetch('http://127.0.0.1:5000/predict', {
       method: 'POST',
       body: formData
     })
